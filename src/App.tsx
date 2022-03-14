@@ -1,17 +1,9 @@
 import React from "react";
-import Cat from "./components/Cat";
-import useFetchCats from "./hooks/useFetchCats";
 
-const App: React.FC = () => {
-  const cats = useFetchCats();
-
-  if (!cats) return null;
-
+const App = () => {
   return (
     <div className="App">
-      {cats.map((cat) => (
-        <Cat key={cat._id} cat={cat} />
-      ))}
+      <p>Meow</p>
     </div>
   );
 };
